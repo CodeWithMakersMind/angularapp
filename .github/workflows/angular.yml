@@ -2,8 +2,6 @@ name: CI / CD for Angular
 on:
   push:
     branches: [ "staging" ]
-  pull:
-    branches: [ "staging" ]
 
 jobs:
   build-and-deploy:
