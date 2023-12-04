@@ -27,4 +27,5 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: dist/my-app
+        env:
           token: ${{ secrets.ACCESS_TOKEN }}
