@@ -27,5 +27,4 @@ jobs:
         with:
           target_branch: deploy
           build_dir: dist/my-app
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
