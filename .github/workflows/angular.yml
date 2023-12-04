@@ -27,5 +27,5 @@ jobs:
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           target_branch: gh-pages # The branch the action should deploy to.
-          folder: dist/my-app # The folder the action should deploy.
+          build_dir: dist/my-app # The folder the action should deploy.
           single-commit: true
