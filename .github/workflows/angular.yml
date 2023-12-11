@@ -1,11 +1,8 @@
 name: CI / CD for Angular
 on:
-  pull_request:
-    branches: [ "staging" ]
   push:
     branches: [ "staging" ]
   
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
