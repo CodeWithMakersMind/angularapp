@@ -1,6 +1,5 @@
 {
   "name": "my-app",
-  "homepage": "https://www.mmworkspace.com/testing/",
   "version": "0.0.0",
   "scripts": {
     "predeploy": "ng run build",
