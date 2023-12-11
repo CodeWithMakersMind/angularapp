@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "version": "0.0.0",
+  "homepage": "https://mmworkspace.com/testing/",
   "scripts": {
     "predeploy": "ng run build",
     "deploy": "gh-pages -d build",
