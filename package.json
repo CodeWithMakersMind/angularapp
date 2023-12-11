@@ -4,7 +4,7 @@
   "homepage": "https://mmworkspace.com/testing/",
   "scripts": {
     "predeploy": "ng run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "deploy -d build",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
