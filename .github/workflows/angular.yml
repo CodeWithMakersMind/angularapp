@@ -25,6 +25,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
+          run: rm -rf /mmworkspace.com/public_html/testing
           target_branch: deploy
           build_dir: dist/my-app
         env:
