@@ -23,7 +23,7 @@ jobs:
         run: npm run build -- --configuration production --base-href "https://mmworkspace.com/testing/"
      
       - name: Delete directory
-        run: rm -rf /home/u237107965/domains/mmworkspace.com/public_html/testing/*
+        run: rm -rf /home/u237107965/domains/mmworkspace.com/public_html/testing/
         
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
