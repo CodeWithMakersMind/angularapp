@@ -21,11 +21,13 @@ jobs:
 
       - name: Build
         run: npm run build -- --configuration production --base-href "https://mmworkspace.com/testing/"
-
+     
+      - name: Delete directory
+        run: "rm -rf /mmworkspace.com/public_html/testing"
+        
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
-          run: "rm -rf /mmworkspace.com/public_html/testing"
           target_branch: deploy
           build_dir: dist/my-app
         env:
