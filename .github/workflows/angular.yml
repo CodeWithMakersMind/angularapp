@@ -13,7 +13,7 @@ jobs:
       - name: Set up node.js
         uses: actions/setup-node@v3.3.0
         with:
-          node-version: '18.x'
+          node-version: '16.x'
           cache: 'npm'
 
       - name: Install dependencies
