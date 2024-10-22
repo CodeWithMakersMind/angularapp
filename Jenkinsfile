@@ -1,20 +1,17 @@
 pipeline {
-  agent any
-  stages {
-    stage('Install') {
-      steps {
-        sh 'npm install'
-        sh 'npm install -g @angular/cli'
-      }
+     agent any
+     stages {
+        stage("Build") {
+            steps {
+                sh "sudo npm install"
+                sh "sudo ng build"
+            }
+        }
+        stage("Deploy") {
+            steps {
+                sh "sudo rm -rf /var/www/myapp"
+                sh "sudo cp -r ${WORKSPACE}/build/ /var/www/myapp/"
+            }
+        }
     }
-
-    stage('Build') {
-      steps {
-        sh 'ng build'
-      }
-    }
-  }
-  tools {
-    nodejs 'nodejs'
-  }
 }
