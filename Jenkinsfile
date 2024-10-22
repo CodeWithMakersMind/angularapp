@@ -9,7 +9,7 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                sh "sudo rm -rf /var/www/html"
+                sh "sudo rm -rf /var/www/React-app"
                 sh "sudo cp -r ${WORKSPACE}/build/ /var/www/my-app/"
             }
         }
