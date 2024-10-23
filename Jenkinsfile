@@ -4,7 +4,7 @@ pipeline {
         stage("Build") {
             steps {
                 sh "sudo npm install -g @angular/cli --force"
-                sh "npm install shebang-regex --save"
+                sh "npm install statuses --save"
                 sh "sudo ng build"
             }
         }
