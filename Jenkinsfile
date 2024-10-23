@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh "sudo npm install -g @angular/cli --force"
                 sh "sudo npm install"
-                sh "sudo ng build --prod"
+                sh "sudo ng build"
             }
         }
         stage("Deploy") {
