@@ -4,7 +4,7 @@ pipeline {
         stage("Build") {
             steps {
                 sh "sudo npm install -g @angular/cli --force"
-                sh "sudo npm install setprototypeof --save"
+                sh "sudo npm install --force"
                 sh "sudo ng build"
             }
         }
