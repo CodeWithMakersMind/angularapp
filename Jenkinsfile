@@ -4,7 +4,7 @@ pipeline {
         stage("Build") {
             steps {
                 sh "sudo npm install -g @angular/cli --force"
-                sh "sudo npm install"
+                sh "npm install source-map --save"
                 sh "sudo ng build"
             }
         }
